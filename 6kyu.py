@@ -27,3 +27,16 @@ from typing import List
 #
 #
 # assert multiplication_table(3) == [[1, 2, 3], [2, 4, 6], [3, 6, 9]]
+
+# # 6 kyu Sums of Parts
+# def parts_sums(ls: List[int]) -> List[int]:
+#     result = []
+#     total_sum = sum(ls)
+#     for value in ls:
+#         result.append(total_sum)
+#         total_sum -= value
+#     result.append(0)
+#     return result
+#
+#
+# assert parts_sums([0, 1, 3, 6, 10]) == [20, 20, 19, 16, 10, 0]
