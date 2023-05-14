@@ -29,3 +29,8 @@ from typing import Dict
 #     else:
 #         return int(''.join(map(str, reversed(factors))))
 
+# # 5 кю  Не очень безопасно
+#
+# def alphanumeric(password: str) -> bool:
+#     return password.isalnum()
+
