@@ -41,3 +41,13 @@ from typing import List
 #
 # assert parts_sums([0, 1, 3, 6, 10]) == [20, 20, 19, 16, 10, 0]
 
+# 6 кю Преобразование строки в верблюжий регистр
+def to_camel_case(text: str):
+    text = text.replace('-', ' ')
+    text = text.replace('_', ' ')
+    if text.strip() != '':
+        result = text.split()[0]
+        return result + ''.join((word.capitalize() for word in text.split()[1:]))
+    return text
+
+print(to_camel_case(''))
