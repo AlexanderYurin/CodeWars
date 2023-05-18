@@ -40,4 +40,12 @@ from typing import Optional, Union
 # "carrot", "celery", "cucumber", "mushroom", "onion", "pepper", "potato", "tofu", "turnip") result = [(string.count(
 # vegetable), vegetable) for vegetable in vegetables] return sorted(result, key=lambda x: (x[0], x[1]), reverse=True)
 
+# 7 кю Вызов всего звездного кода № 20
+
+# def add_arrays(array1, array2):
+#     # your code here
+#     if len(array1) != len(array2):
+#         raise IndexError
+#     return [sym + array2[index_sym] for index_sym, sym in enumerate(array1)]
+
 
