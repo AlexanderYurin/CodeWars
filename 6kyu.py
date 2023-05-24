@@ -59,3 +59,12 @@ def sort_array(source_array: list) -> list:
     return source_array
 
 
+# 6 кю Дублирующий кодер
+
+# def duplicate_encode(word: str):
+#     word = word.lower()
+#     return ''.join([')'
+#                     if word.count(i) > 1
+#                     else '('
+#                     for i in word])
+
