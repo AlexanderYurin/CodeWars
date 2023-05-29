@@ -34,3 +34,15 @@ from typing import Dict
 # def alphanumeric(password: str) -> bool:
 #     return password.isalnum()
 
+# 5 kyu flatten()
+
+# def flatten(*args) -> list:
+#     new_array = []
+#     for item in args:
+#         if isinstance(item, list):
+#             new_array += flatten(*item)
+#         else:
+#             new_array.append(item)
+#     return new_array
+#
+# assert flatten([1, [3], [[2]]]) == [1, 3, 2]
