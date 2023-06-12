@@ -46,3 +46,19 @@ from typing import Dict
 #     return new_array
 #
 # assert flatten([1, [3], [[2]]]) == [1, 3, 2]
+
+# 5 kyu Best travel
+
+# def choose_best_sum(t, k, ls):
+#     from itertools import combinations
+#     try:
+#         sum_all_mil = max((mil for mil in map(sum, combinations(ls, k)) if mil <= t))
+#     except ValueError:
+#         return None
+#     else:
+#         return sum_all_mil
+
+
+
+
+
