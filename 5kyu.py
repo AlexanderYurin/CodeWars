@@ -57,8 +57,5 @@ from typing import Dict
 #         return None
 #     else:
 #         return sum_all_mil
-
-
-
-
-
+# def last_digit(n1, n2):
+#     return pow(n1, n2, 10)

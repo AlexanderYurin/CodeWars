@@ -24,11 +24,11 @@
 # def square_sum(numbers):
 #     return sum(map(lambda x: x**2, numbers))
 #  8 кю Транспорт в отпуске
-def rental_car_cost(d):
-    total_cost_no_sale = d * 40
-    if d >= 7:
-        return total_cost_no_sale - 50
-    elif d >= 3:
-        return total_cost_no_sale - 50
-    return total_cost_no_sale
+# def rental_car_cost(d):
+#     total_cost_no_sale = d * 40
+#     if d >= 7:
+#         return total_cost_no_sale - 50
+#     elif d >= 3:
+#         return total_cost_no_sale - 50
+#     return total_cost_no_sale
 
