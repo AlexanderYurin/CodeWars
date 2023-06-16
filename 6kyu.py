@@ -51,12 +51,12 @@ from typing import List
 #     return text
 
 # 6 кю Сортировать лишнее
-def sort_array(source_array: list) -> list:
-    odds = sorted([n for n in source_array if n % 2 != 0])
-    for i, n in enumerate(source_array):
-        if n % 2 != 0:
-            source_array[i] = odds.pop(0)
-    return source_array
+# def sort_array(source_array: list) -> list:
+#     odds = sorted([n for n in source_array if n % 2 != 0])
+#     for i, n in enumerate(source_array):
+#         if n % 2 != 0:
+#             source_array[i] = odds.pop(0)
+#     return source_array
 
 
 # 6 кю Дублирующий кодер
@@ -68,3 +68,13 @@ def sort_array(source_array: list) -> list:
 #                     else '('
 #                     for i in word])
 
+# 6 kyu Highest Scoring Word
+
+def high(string: str)-> str:
+    from string import ascii_lowercase
+    alphabet = ascii_lowercase
+    a = [sum([alphabet.index(symbol)+1 for symbol in word]) for word in string.split()]
+    return string.split()[a.index(max(a))]
+
+
+print(high('dasd sdasda sdasad'))
