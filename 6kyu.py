@@ -70,11 +70,21 @@ from typing import List
 
 # 6 kyu Highest Scoring Word
 
-def high(string: str)-> str:
-    from string import ascii_lowercase
-    alphabet = ascii_lowercase
-    a = [sum([alphabet.index(symbol)+1 for symbol in word]) for word in string.split()]
-    return string.split()[a.index(max(a))]
+# def high(string: str)-> str:
+#     from string import ascii_lowercase
+#     alphabet = ascii_lowercase
+#     a = [sum([alphabet.index(symbol)+1 for symbol in word]) for word in string.split()]
+#     return string.split()[a.index(max(a))]
+#
+# 6 kyu
+# Consecutive strings
+def longest_consec(strarr, k):
+	n = len(strarr)
+	if n == 0 or k > n or k <= 0:
+		return ""
+	new = [''.join(strarr[i:i+k]) for i in range(n)]
+	leen_i = list(map(len, new))
+	return new[leen_i.index(max(leen_i))]
 
 
-print(high('dasd sdasda sdasad'))
+
