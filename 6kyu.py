@@ -78,13 +78,23 @@ from typing import List
 #
 # 6 kyu
 # Consecutive strings
-def longest_consec(strarr, k):
-	n = len(strarr)
-	if n == 0 or k > n or k <= 0:
-		return ""
-	new = [''.join(strarr[i:i+k]) for i in range(n)]
-	leen_i = list(map(len, new))
-	return new[leen_i.index(max(leen_i))]
+# def longest_consec(strarr, k):
+# 	n = len(strarr)
+# 	if n == 0 or k > n or k <= 0:
+# 		return ""
+# 	new = [''.join(strarr[i:i+k]) for i in range(n)]
+# 	leen_i = list(map(len, new))
+# 	return new[leen_i.index(max(leen_i))]
 
 
+# 6kyu Split Strings
 
+def solution(s):
+	if s == "":
+		return []
+	res = [s[i:i+2] for i in range(len(s),2)]
+	# if len(s) % 2 != 0:
+	# 	 ...
+	return res
+
+print(solution("123213123"))
