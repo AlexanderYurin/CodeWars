@@ -90,11 +90,12 @@ from typing import List
 # 6kyu Split Strings
 
 def solution(s):
-	if s == "":
+	if len(s) == 0:
 		return []
-	res = [s[i:i+2] for i in range(len(s),2)]
-	# if len(s) % 2 != 0:
-	# 	 ...
+	res = [s[i:i+2] for i in range(0, len(s), 2)]
+	print(s[0:2])
+	if len(res[-1]) == 1:
+		res[-1] = res[-1] + "_"
 	return res
 
 print(solution("123213123"))
