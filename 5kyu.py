@@ -59,3 +59,19 @@ from typing import Dict
 #         return sum_all_mil
 # def last_digit(n1, n2):
 #     return pow(n1, n2, 10)
+#5 кю Рот13
+def rot13(message:str):
+	import string
+	letters_lowercase = string.ascii_lowercase
+	letters_uppercase = string.ascii_uppercase
+	letters_shifr_lowercase = {v:letters_lowercase[(k+13)%26] for k, v in  enumerate(letters_lowercase)}
+	letters_shifr_uppercase = {v: letters_uppercase[(k + 13) % 26] for k, v in enumerate(letters_uppercase)}
+	letters_shifr = letters_shifr_lowercase | letters_shifr_uppercase
+	print(letters_shifr)
+	shifr = ''
+	for item in message:
+		if item.isalpha():
+			shifr += letters_shifr[item]
+			continue
+		shifr += item
+	return shifr
