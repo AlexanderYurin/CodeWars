@@ -98,4 +98,8 @@ def solution(s):
 		res[-1] = res[-1] + "_"
 	return res
 
-print(solution("123213123"))
+def comp(array1, array2):
+	if not isinstance(array1, list) or not isinstance(array2, list):
+		return False
+	ar1 = list(map(lambda x: x**2, array1))
+	return sorted(ar1) == sorted(array2)
